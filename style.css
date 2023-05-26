@@ -1,0 +1,233 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+}
+
+/*===========================CONTAINER SECTION===================*/
+
+#container{
+	display: flex;
+	flex-direction: column;
+	margin:auto;
+	width: 85vw;
+  overflow-x: hidden;
+}
+
+/*===========================TOP- SECTION===================*/
+
+#top-section{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	margin-top: 25px;
+
+}
+
+#left-top-section{
+	display: flex;
+	width: 35%;
+}
+
+#right-top-section{
+	display: flex;
+	flex-direction: column;
+	width: 38%;
+	margin-left:24.5%;
+}
+
+#left-top-section h1{
+	font-family: PT Serif;
+	font-weight: 700;
+	font-size: 3vw;	
+	color: #000000;
+	line-height: 47.7px;
+}
+
+#right-top-section h2{               
+	font-family: poppins;
+	font-size: 2.5vw;
+	padding-left: 40px;
+	line-height: 27px;
+}
+
+#right-top-section h2 p{
+	font-family: PT Serif;
+	font-size: 1.8vw;
+	font-weight: 400;
+	line-height: 27px;
+	width: 350px;
+	height: 87px; 
+}
+
+
+/*===========================TOP-BODY SECTION===================*/
+
+#top-body{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 85vw;
+	margin: 50px 0px;
+}
+
+
+/*===========================BOTTOM-BODY SECTION===================*/
+
+#bottom-body{
+	display: flex;
+	flex-direction: row;
+	width: 85vw;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+
+span.rotate{
+font-family: PT Serif;
+font-weight: 200px;
+font-size: 1.9vw;
+ writing-mode: vertical-rl;
+ position: absolute; 
+  top: 0px;
+  right: 0px;
+} 
+/* Container for each div */
+.body {
+  width: 25vw;
+  heigth: 70vh;
+  position: relative;
+}
+
+/* Margin-top for img 2 */
+#adjusment{
+  margin-top: 60px;
+}
+
+#adjustment{
+    margin-top: auto;
+  }
+
+/* Margin-top for img 1 */
+#adjust{
+  margin-top: 60px;
+}
+
+/* Img property */
+img {
+  width: 22.9vw;
+  height: 65vh;
+  border-radius: 10px;
+}
+ 
+/* Name container */
+p[ class="name"]
+{
+font-family: 'Poppins';
+font-weight: 600;
+font-size: 1.8vw;
+margin-left: 35px;
+margin-top: 8px;
+}
+
+/*===========================FOOTER SECTION===================*/
+
+.footer{
+	display: flex;
+	width: 80%;
+	margin: auto;
+	padding-left: 250px;
+	opacity: 0.8;
+	color: black;
+ font-size: 1.9vw;
+	}
+
+	/*===========================MEDIA QUERY SECTION===================*/
+
+/* Design for Tablet */
+@media (max-width: 768px){
+  #top-section{
+	display: flex;
+	flex-direction: column; 
+}
+  #left-top-section{
+    width: 100%;
+  }
+  #left-top-section h1{
+	width: 100%;
+   text-align: center;
+    font-size: 4.8vw;
+    margin-bottom: 30px;
+}
+  #right-top-section{
+    width: 100%
+  }
+  #right-top-section h2{
+    width: 100%;
+    font-size: 3vw;
+  }
+  #right-top-section p{
+    width: 50vw;
+  }
+  
+  .footer{
+    display: flex;
+	width: 100vw;
+	margin: auto 15px;
+padding-left: 50px; 
+	opacity: 0.8;
+	color: black;
+    font-size: 3.5vw;
+    
+  }
+   
+
+}
+
+/* Desig for Mobile Phone */
+@media (max-width: 576px){
+  .body{
+    width: 90%;
+    margin: 10px auto;
+  }
+  img{
+    width: 90%;
+    margin: auto;
+  }
+  p[ class="name"]{
+    font-size: 2.5vw
+  }
+  
+  span.rotate{
+    font-size: 2.2vw;
+  }
+  #adjusment{
+    margin-top: 20px;
+  }
+  #adjust{
+    margin-top: 20px;
+  }
+  #bottom-body{
+    margin-top: -35px;
+  }
+  .footer{
+    display: flex;
+	width: 100vw;
+	margin: auto 15px;
+padding-left: 50px; 
+	opacity: 0.8;
+	color: black;
+    font-size: 3.5vw;
+    
+  }
+  
+}
+
+
